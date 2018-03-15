@@ -1,0 +1,79 @@
+
+*:not(#up):not(#down):not(#upDownDiv){
+	transition: all .5s ease-in-out;
+	text-decoration: none;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+		user-select: none; /* Non-prefixed version, currently
+							  supported by Chrome and Opera */
+}
+#array {
+	margin: 15px;
+	width: auto;
+	height: 30px;
+	border: 1px solid black;
+}
+#fontBtnWrap {
+	display: block;
+	margin: 15px auto;
+	width: 225px;
+	height: 80px;
+}
+#upDownDiv {
+	display: none;
+	float: left;
+}
+#up , #down {
+	display: inline-block;
+	position: relative;
+	margin: 5px;
+	text-align: center;
+	width: 38px;
+	height: 38px;
+	font-size: 35px;
+	line-height: 34px;
+	border: 2px solid #207BBB;
+	color: #207BBB;
+	cursor: pointer;
+}
+#fontBtn {
+	position: relative;
+	margin: 5px;
+	float: left;
+	text-align: center;
+	padding-top: 6px;
+	width: 98px;
+	height: 32px;
+	font-size: 18px;
+	border: 2px solid #207BBB;
+	color: #207BBB;
+	background-color: white;
+	cursor: pointer;
+}
+#fontBtn:hover, #up:hover, #down:hover {
+	color: white;
+	background-color: #207BBB;
+	transition: all .15s;
+}
+ #up:hover {
+	transform: scale(1.1);
+ }
+ #down:hover {
+	transform: scale(0.9)
+ }
+ #up:active, #down:active {
+	transition: all .05s;
+	background-color: black;
+	color: white;
+	transform: scale(1.4);
+}
+#down:active {
+	transform: scale(0.6);
+}
+.fontActive{
+	color: white !important;
+	background-color: black !important;
+}
