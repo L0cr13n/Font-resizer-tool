@@ -1,15 +1,9 @@
+/***********************
+Javascript is located in:
+/gloss2.dliflc.dev/HeadStartHtml/templates/common/js/CustomFontAdjustTool.js 
+***********************/
 
-*:not(#up):not(#down):not(#upDownDiv){
-	transition: all .5s ease-in-out;
-	text-decoration: none;
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-		user-select: none; /* Non-prefixed version, currently
-							  supported by Chrome and Opera */
-}
+
 #array {
 	margin: 15px;
 	width: auto;
@@ -17,41 +11,49 @@
 	border: 1px solid black;
 }
 #fontBtnWrap {
-	display: block;
-	margin: 15px auto;
+	  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+	display: inline;
 	width: 225px;
-	height: 80px;
+	height: 40px;
 }
 #upDownDiv {
 	display: none;
 	float: left;
+	z-index: 1;
 }
 #up , #down {
 	display: inline-block;
 	position: relative;
-	margin: 5px;
+	margin-left: 10px;
 	text-align: center;
 	width: 38px;
-	height: 38px;
-	font-size: 35px;
-	line-height: 34px;
+	height: 35px;
+	font-size: 25px;
+	line-height: 32px;
 	border: 2px solid #207BBB;
 	color: #207BBB;
 	cursor: pointer;
 }
 #fontBtn {
 	position: relative;
-	margin: 5px;
+	z-index: 10;
 	float: left;
 	text-align: center;
-	padding-top: 6px;
+	padding-top: 8px;
 	width: 98px;
-	height: 32px;
-	font-size: 18px;
+	height: 28px;
+	font-size: 16px;
 	border: 2px solid #207BBB;
 	color: #207BBB;
 	background-color: white;
 	cursor: pointer;
+	margin-right: 15px;
 }
 #fontBtn:hover, #up:hover, #down:hover {
 	color: white;
